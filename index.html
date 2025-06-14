@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Varun Featuristic Image Gallery</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>        <h1>VARUN IMGAE GALLERY</h1>
+        <nav class="filters" aria-label="Image Categories">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="nature">Nature Escapes</button>
+            <button class="filter-btn" data-filter="city">Urban Visions</button>
+            <button class="filter-btn" data-filter="abstract">Abstract Realms</button>
+            <button class="filter-btn" data-filter="food">Culinary Delights</button>
+        </nav>
+    </header>
+
+    <main class="gallery-container">
+        <!-- Images with data-src for lazy loading and new data attributes for captions -->
+        <div class="gallery-item nature">
+            <img data-src="https://images.stockcake.com/public/f/4/d/f4d3f8c9-a3b5-423a-9b1b-be32b9ab1e2e_large/majestic-mountain-view-stockcake.jpg"
+                 alt="Majestic Green Mountains"
+                 data-category="nature"
+                 data-title="Peak Serenity"
+                 data-description="A tranquil view of towering green mountains at dawn."
+                 loading="lazy">
+            <div class="overlay"><span>View Image</span></div>
+        </div>
+        <div class="gallery-item city">
+            <img data-src="https://images.stockcake.com/public/c/5/f/c5f8e0cd-a0db-4661-a19e-0c90aeaf3bd6_large/sunset-over-skyline-stockcake.jpg"
+                 alt="Vibrant City Skyline at Sunset"
+                 data-category="city"
+                 data-title="Twilight Metropolis"
+                 data-description="The vibrant lights of a bustling city at the magical hour of sunset."
+                 loading="lazy">
+            <div class="overlay"><span>View Image</span></div>
+        </div>
+        <div class="gallery-item abstract">
+            <img data-src="https://thumbs.dreamstime.com/b/colorful-abstract-painting-variety-shapes-hues-blending-together-dynamic-composition-colorful-abstract-painting-319829233.jpg?w=992"
+                 alt="Dynamic Abstract Art Piece"
+                 data-category="abstract"
+                 data-title="Geometric Harmony"
+                 data-description="A captivating blend of colors and geometric forms creating a sense of balance."
+                 loading="lazy">
+            <div class="overlay"><span>View Image</span></div>
+        </div>
+        <div class="gallery-item food">
+            <img data-src="https://thumbs.dreamstime.com/b/close-up-deliciously-plated-meal-table-view-carefully-arranged-plate-appetizing-food-placed-311362984.jpg?w=992"
+                 alt="Deliciously Plated Meal"
+                 data-category="food"
+                 data-title="Gourmet Delight"
+                 data-description="An exquisitely plated dish, a true masterpiece of culinary art."
+                 loading="lazy">
+            <div class="overlay"><span>View Image</span></div>
+        </div>
+        <div class="gallery-item nature">
+            <img data-src="https://images.stockcake.com/public/1/4/1/1419d476-3af2-4f3c-a7b9-114355c03980_large/sunlit-forest-path-stockcake.jpg"
+                 alt="Serene Forest Path with Sunlight"
+                 data-category="nature"
+                 data-title="Sunlit Path"
+                 data-description="Golden rays of sunlight piercing through the canopy of a peaceful forest."
+                 loading="lazy">
+            <div class="overlay"><span>View Image</span></div>
+        </div>
+        <div class="gallery-item city">
+            <img data-src="https://images.stockcake.com/public/b/5/5/b55bb4cb-04fc-49b4-9947-e26bc7cade44_large/bustling-nightlife-scene-stockcake.jpg"
+                 alt="Bustling Urban Street at Night"
+                 data-category="city"
+                 data-title="Neon Streets"
+                 data-description="The lively energy of an urban street illuminated by the glow of neon lights."
+                 loading="lazy">
+            <div class="overlay"><span>View Image</span></div>
+        </div>
+        <div class="gallery-item abstract">
+            <img data-src="https://www.shutterstock.com/image-vector/monochrome-memphis-geometric-shapes-vector-600nw-2520503589.jpg"
+                 alt="Intricate Geometric Shapes"
+                 data-category="abstract"
+                 data-title="Complex Patterns"
+                 data-description="A mesmerizing array of intricate geometric patterns in muted tones."
+                 loading="lazy">
+            <div class="overlay"><span>View Image</span></div>
+        </div>
+        <div class="gallery-item food">
+            <img data-src="https://images.stockcake.com/public/b/8/b/b8bca4f2-33d0-40cb-a267-d57d747713cc_large/assorted-breakfast-pastries-stockcake.jpg"
+                 alt="Freshly Baked Pastries"
+                 data-category="food"
+                 data-title="Sweet Indulgence"
+                 data-description="A tempting display of golden, freshly baked pastries, ready to be enjoyed."
+                 loading="lazy">
+            <div class="overlay"><span>View Image</span></div>
+        </div>
+        <div class="gallery-item nature">
+            <img data-src="https://images.pexels.com/photos/28640163/pexels-photo-28640163/free-photo-of-tranquil-lakeside-view-at-sunset-with-canoe.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                 alt="Tranquil Lakeside View"
+                 data-category="nature"
+                 data-title="Reflective Waters"
+                 data-description="A serene lake mirroring the sky, surrounded by lush, green wilderness."
+                 loading="lazy">
+            <div class="overlay"><span>View Image</span></div>
+        </div>
+        <div class="gallery-item city">
+            <img data-src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRf82H-bxIQcg2LTeaxB6Bt4bxUmQU8dN9Aag&s"
+                 alt="Panoramic View of City Lights"
+                 data-category="city"
+                 data-title="Urban Panorama"
+                 data-description="An expansive panoramic view of a city as it sparkles with night lights."
+                 loading="lazy">
+            <div class="overlay"><span>View Image</span></div>
+        </div>
+        <div class="gallery-item abstract">
+            <img data-src="https://images.stockcake.com/public/5/8/7/587e19c4-d75f-42d1-9ed9-43af8abbf505_large/vibrant-color-swirl-stockcake.jpg"
+                 alt="Vibrant Colorful Swirls"
+                 data-category="abstract"
+                 data-title="Chromatic Flow"
+                 data-description="A dynamic and vibrant abstract piece with flowing, intertwined colors."
+                 loading="lazy">
+            <div class="overlay"><span>View Image</span></div>
+        </div>
+        <div class="gallery-item food">
+            <img data-src="https://img.freepik.com/free-psd/assorted-fresh-fruit-platter-colorful-summer-berries-grapes-kiwi-strawberries_84443-45925.jpg?semt=ais_hybrid&w=740"
+                 alt="Artfully Arranged Fruit Platter"
+                 data-category="food"
+                 data-title="Healthy Harvest"
+                 data-description="A beautifully arranged platter of fresh, colorful fruits."
+                 loading="lazy">
+            <div class="overlay"><span>View Image</span></div>
+        </div>
+    </main>
+
+    <div class="lightbox" role="dialog" aria-modal="true" aria-label="Image Viewer">
+        <button class="close-btn" aria-label="Close Lightbox"><i class="fas fa-times"></i></button>
+        <div class="lightbox-content">
+            <div class="spinner"></div> <!-- Loading spinner -->
+            <img class="lightbox-img" src="" alt="Full size image" aria-live="polite">
+            <div class="lightbox-info">
+                <h3 class="lightbox-title"></h3>
+                <p class="lightbox-description"></p>
+                <a href="#" class="download-btn" download aria-label="Download Image"><i class="fas fa-download"></i> Download</a>
+            </div>
+        </div>
+        <div class="lightbox-nav">
+            <button class="prev-btn" aria-label="Previous Image"><i class="fas fa-chevron-left"></i></button>
+            <button class="next-btn" aria-label="Next Image"><i class="fas fa-chevron-right"></i></button>
+        </div>
+        <div class="lightbox-thumbnails">
+            <!-- Thumbnails will be populated here by JavaScript -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
